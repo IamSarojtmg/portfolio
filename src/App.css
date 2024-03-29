@@ -60,7 +60,7 @@ background-position: fill;
 .full-name{
   font-size: 60px;
   margin-bottom: 1px;
-  margin-top: -60px;
+  margin-top: 0px;
 }
 
 
@@ -70,16 +70,16 @@ background-position: fill;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid black;
 }
 
 .intro-cont{
-  background: rgba(21, 95, 133, 0.2); 
-  height: 50%;
+  background: rgba(0, 0, 0, 0.2); 
+  height: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  min-width: 600px;
 }
 
 .intro-cont p{
