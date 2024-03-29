@@ -1,14 +1,30 @@
-import React from 'react'
-
-
+import React from "react";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
 
 export const Home = () => {
   return (
-    <section className='home'>
-      <a className='anchor' id='home'></a>
-      <div className="img-sqr"></div>
-      <h1>Saroj Tamang</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cumque. Soluta, quod. Reiciendis quos adipisci ipsam quisquam nesciunt voluptates nulla similique rem odit! Ad optio dolores tempore quidem alias debitis.</p>
+    <section className="home">
+      <div className="container">
+        <a className="anchor" id="home"></a>
+
+        <div className="intro-cont">
+
+          <div className="first-intro">
+          <h1 className="full-name">Saroj Tamang</h1>
+          <p>
+          I am an ambitious, business-focused software developer and experienced Service Desk Analyst. Equipped with a robust amount of soft skills, eager to learn new languages on both the front and back end and contribute to cutting-edge projects - I am looking for a role as an entry-level software developer. 
+          </p>
+          </div>
+
+          <div className="second-intro">
+            <img src={github} width={40} height={40} alt="an image of github Icon" />
+            <img src={linkedin} width={40} height={40} alt="an image of linkedin icon" />
+          </div>
+
+        </div>
+
+      </div>
     </section>
-  )
-}
+  );
+};

@@ -5,11 +5,11 @@ import { Body } from "./components/body";
 function App() {
   return (
     <section className="background">
-
-    <div className="App">
-      <NavigationBar/>
-      {/* <Body/> */}
-    </div>
+      {/* <section className="container"> */}
+        <div className="App">
+          <NavigationBar />
+        </div>
+      {/* </section> */}
     </section>
   );
 }

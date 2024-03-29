@@ -1,19 +1,25 @@
-body,html{
+body{
   margin: 0;
   padding: 0;
+  /* border: solid red; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
+
+
 .background{
 height: 100vh;
 background-image: url('./images/background.avif');
 background-size: cover;
 background-attachment: fixed;
-background-position: center;
 background-repeat: no-repeat;
+background-position: fill;
 }
+
+
 
 .nav-header {
   background-color: #68829b;
-  color: white;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -28,27 +34,107 @@ background-repeat: no-repeat;
   font-size: larger;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 .anchor{
   display: block;
   position: relative;
   visibility: hidden;
-  height: 54px;
+  height: 49px;
   z-index: -1;
 }
 
 .home{
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-.img-sqr{
-  height: 200px;
-  width: 200px;
-  border: solid;
+.full-name{
+  font-size: 60px;
+  margin-bottom: 1px;
+  margin-top: -60px;
 }
+
+
+.container{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+}
+
+.intro-cont{
+  background: rgba(21, 95, 133, 0.2); 
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.intro-cont p{
+  width: 80%;
+}
+
+.first-intro{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+font-size: x-large;
+}
+.second-intro{
+justify-content: center;
+display: flex;
+gap: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about-me{
   height: 500px;
   background-color: #95b1ce;
+  display: flex;
+  justify-content: center;
 }
 
 .skills{
@@ -56,4 +142,14 @@ background-repeat: no-repeat;
   height: 1000px;
 }
 
+.projects{
+  background-color: gray;
+  height: 1000px;
+}
+
+.contact-me{
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
 
