@@ -1,22 +1,19 @@
-body{
+body {
   margin: 0;
   padding: 0;
-  /* border: solid red; */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 
-.background{
-height: 100vh;
-background-image: url('./images/background.avif');
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-position: fill;
+.background {
+  height: 100vh;
+  background-image: url('./images/background.avif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: fill;
 }
-
-
 
 .nav-header {
   background-color: #68829b;
@@ -25,25 +22,23 @@ background-position: fill;
   position: fixed;
   width: 100%;
   top: 0;
+  font-weight: bolder;
 }
 
-.link{
+.link {
   text-decoration: none;
   display: inline;
   padding: 20px;
   font-size: larger;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.link:hover {
+  color: black;
+}
 
-
-
-
-
-
-
-
-.anchor{
+.anchor {
   display: block;
   position: relative;
   visibility: hidden;
@@ -51,20 +46,20 @@ background-position: fill;
   z-index: -1;
 }
 
-.home{
+/* HomePage */
+.home {
   height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-.full-name{
+.full-name {
   font-size: 60px;
   margin-bottom: 1px;
   margin-top: 0px;
 }
 
-
-.container{
+.container {
   height: 100%;
   width: 50%;
   display: flex;
@@ -72,8 +67,8 @@ background-position: fill;
   justify-content: center;
 }
 
-.intro-cont{
-  background: rgba(0, 0, 0, 0.2); 
+.intro-cont {
+  background: rgba(0, 0, 0, 0.2);
   height: 45%;
   display: flex;
   flex-direction: column;
@@ -82,74 +77,100 @@ background-position: fill;
   min-width: 600px;
 }
 
-.intro-cont p{
+.intro-cont p {
   width: 80%;
 }
 
-.first-intro{
+.first-intro {
   display: flex;
   flex-direction: column;
-align-items: center;
-font-size: x-large;
-}
-.second-intro{
-justify-content: center;
-display: flex;
-gap: 10%;
+  align-items: center;
+  font-size: x-large;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about-me{
-  height: 500px;
-  background-color: #95b1ce;
-  display: flex;
+.second-intro {
   justify-content: center;
+  display: flex;
+  gap: 10%;
 }
 
-.skills{
+/* About me */
+
+.about-me {
+  background-color: #95b1ce;
+  height: 700px;
+}
+
+.about-me-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.about-me-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+}
+
+.my-img {
+  border-radius: 150px;
+}
+
+.bio {
+  width: 80%;
+  font-size: large;
+}
+
+.view-cv {
+  padding: 20px;
+  background-color: #68829b;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+.view-cv:hover {
+  color: black;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills {
   background-color: #98aabd;
   height: 1000px;
 }
 
-.projects{
+.projects {
   background-color: gray;
   height: 1000px;
 }
 
-.contact-me{
+.contact-me {
   background-color: black;
   color: white;
   height: 100vh;
 }
-

@@ -10,7 +10,7 @@ export const NavigationBar = () => {
   const aboutMe = useRef(null);
   const skills = useRef(null);
   const projects = useRef(null);
-  const contactMe = useRef(null)
+  const contactMe = useRef(null);
 
   const scrollToSection = (ref) => {
     window.scrollTo({
@@ -55,9 +55,14 @@ export const NavigationBar = () => {
           >
             Projects
           </li>
-          <li onClick={() => {
-            scrollToSection(contactMe)
-          }} className="link">Contact me</li>
+          <li
+            onClick={() => {
+              scrollToSection(contactMe);
+            }}
+            className="link"
+          >
+            Contact me
+          </li>
         </ul>
       </header>
       <div ref={home}>
@@ -76,7 +81,9 @@ export const NavigationBar = () => {
         <Projects />
       </div>
 
-      <div ref={contactMe}><ContactMe/></div>
+      <div ref={contactMe}>
+        <ContactMe />
+      </div>
     </>
   );
 };
