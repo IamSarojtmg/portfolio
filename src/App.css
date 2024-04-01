@@ -105,7 +105,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .about-me-wrapper {
@@ -139,35 +138,211 @@ body {
   background-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* skills */
 .skills {
-  background-color: #98aabd;
-  height: 1000px;
+  background-color: white;
+  height: 400px;
+  color: black;
 }
+
+.skills-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.skills-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+  height: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+.block-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.first-skills-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.second-skill-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .projects {
-  background-color: gray;
-  height: 1000px;
+  background-color: #405873;
+  height: 100vh;
 }
+
+.projects-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+border: solid red;
+height: 100%;
+}
+
+.projects-wrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+  height: 100%;
+  /* border: solid; */
+  justify-content: center;
+}
+
+
+
+.carousel{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+box-shadow: 1px 1px 5px black;
+}
+
+.inner{
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+height: 490px;
+width: 100%;
+background-color: #68829b;
+}
+
+
+.carousel-item-text{
+  font-size: 1.15rem;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+}
+
+.carousel-img{
+width: 700px;
+margin-left: 20px;
+border-radius: 20px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-me {
   background-color: black;
