@@ -41,16 +41,15 @@ export const Projects = () => {
     <section className="projects">
       <a className="anchor"></a>
       <div className="projects-cont">
-          <h1 className="project-heading">Projects</h1>
+        <h1 className="project-heading">Projects</h1>
         <div className="projects-wrapper">
-
           <div className="carousel">
             <div
               className="inner"
               style={{ transform: `translate(-${activeIndex * 100}%)` }}
             >
-              {projects.map((item) => {
-                return <CarouselItem item={item} />;
+              {projects.map((item, index) => {
+                return <CarouselItem item={item} key={index} />;
               })}
             </div>
 

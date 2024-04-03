@@ -246,6 +246,15 @@ hr {
   background-color: #68829b;
 }
 
+.site-link {
+
+  padding-left: 20px;
+}
+
+.carousel-img {
+  width: 100%;
+  border-radius: 20px;
+}
 
 .carousel-item-text {
   font-size: 1.15rem;
@@ -254,11 +263,6 @@ hr {
   white-space: normal;
 }
 
-.carousel-img {
-  width: 700px;
-  margin-left: 20px;
-  border-radius: 20px;
-}
 
 .carousel-buttons {
   display: flex;
@@ -297,38 +301,68 @@ hr {
   color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* contact me */
 .contact-me {
   background-color: black;
   color: white;
-  height: 100vh;
+}
+
+.contactMe-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+.contactMe-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 600px;
+  height: 100%;
+  gap: 20%;
+}
+
+.contactMe-wrapper>h1 {
+  font-size: xx-large;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+  height: 50%;
+
+}
+
+.form-elms {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  align-items: center;
+}
+
+.message-box>textarea {
+  margin: 10px;
+  width: 100%;
+  height: 170px;
+}
+
+.end-footer {
+  background-color: #68829b;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
