@@ -23,6 +23,7 @@ body {
   width: 100%;
   top: 0;
   font-weight: bolder;
+  z-index: 1;
 }
 
 .link {
@@ -205,6 +206,7 @@ hr {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  z-index: -1;
 }
 
 .project-heading {
@@ -247,8 +249,12 @@ hr {
 }
 
 .site-link {
-
   padding-left: 20px;
+  transition: .2s;
+}
+
+.site-link:hover{
+  transform: scale(1.05);
 }
 
 .carousel-img {
