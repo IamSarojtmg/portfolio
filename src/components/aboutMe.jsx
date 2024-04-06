@@ -4,12 +4,13 @@ import profilePic from "../images/Screenshot from 2024-03-01 14-25-04.png";
 export const AboutMe = () => {
   return (
     <section className="about-me">
+
       <a className="anchor" id="about-me"></a>
       <div className="about-me-cont">
         <div className="about-me-wrapper">
           <h1>About me</h1>
           <img
-            width={200}
+            // width={200}
             className="my-img"
             src={profilePic}
             alt="image of the owner of the portfolio"
@@ -31,6 +32,7 @@ export const AboutMe = () => {
           </a>
         </div>
       </div>
+      
     </section>
   );
 };
