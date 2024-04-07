@@ -26,7 +26,17 @@ body {
   top: 0;
   font-weight: bolder;
   z-index: 1;
+  border: solid;
+}
 
+.nav-header ul{
+  border: solid red;
+  height: 100%;
+}
+
+.nav-btn, .nav-close-btn{
+  border: solid green;
+  display: none;
 }
 
 .link {
@@ -387,7 +397,8 @@ hr {
 
 .nav-btn,.nav-close-btn {
   background: transparent;
-  visibility: hidden;
+  /* visibility: hidden; */
+
 }
 
 @media all and (max-width:700px) {
@@ -405,6 +416,13 @@ hr {
  .nav-btn{
   border: none;
 width: 10vw;
+display: block;
+ }
+ .nav-close-btn{
+  display: block;
+  border: none;
+  width: 5vw;
+  background-color: white;
  }
 
 
