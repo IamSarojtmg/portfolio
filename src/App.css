@@ -26,16 +26,14 @@ body {
   top: 0;
   font-weight: bolder;
   z-index: 1;
-  border: solid;
 }
 
-.nav-header ul{
-  border: solid red;
+.nav-header ul {
   height: 100%;
 }
 
-.nav-btn, .nav-close-btn{
-  border: solid green;
+.nav-btn,
+.nav-close-btn {
   display: none;
 }
 
@@ -113,7 +111,7 @@ body {
 
 .about-me {
   background-color: #95b1ce;
-  height: 80vh;
+  height: 100vh;
 }
 
 .about-me-cont {
@@ -144,6 +142,7 @@ body {
 }
 
 .view-cv {
+  margin-top: 20px;
   padding: 20px;
   background-color: #68829b;
   color: white;
@@ -395,9 +394,9 @@ hr {
 
 }
 
-.nav-btn,.nav-close-btn {
+.nav-btn,
+.nav-close-btn {
   background: transparent;
-  /* visibility: hidden; */
 
 }
 
@@ -408,57 +407,59 @@ hr {
 
 
 
- .nav-btn, .nav-close-btn{
-  visibility: visible;
-  opacity: 1;
- } 
+  .nav-btn,
+  .nav-close-btn {
+    visibility: visible;
+    opacity: 1;
+  }
 
- .nav-btn{
-  border: none;
-width: 10vw;
-display: block;
- }
- .nav-close-btn{
-  display: block;
-  border: none;
-  width: 5vw;
-  background-color: white;
- }
+  .nav-btn {
+    border: none;
+    width: 10vw;
+    display: block;
+  }
+
+  .nav-close-btn {
+    display: block;
+    border: none;
+    width: 5vw;
+    background-color: white;
+  }
 
 
- .nav-header ul{
-position: fixed;
-top: -102vh;
-height: 100%;
-background-color: red;
-display: flex;
-justify-content: space-between;
-width: 100%;
-transition: 1s;
- }
+  .nav-header ul {
+    position: fixed;
+    top: -102vh;
+    height: 100%;
+    background-color: #68829b;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: 1s;
+  }
 
- .nav-cont{
-  display: flex;
-  flex-direction: column;
- }
-  
- .responsive-nav{
-  transform: translateY(100vh);
- }
+  .nav-cont {
+    display: flex;
+    flex-direction: column;
+  }
 
- .nav-close-btn{
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
- }
+  .responsive-nav {
+    transform: translateY(100vh);
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
 
 
 
   .nav-header {
-  height: 70px;
-  display: flex;
-  justify-content: end;
+    height: 70px;
+    display: flex;
+    justify-content: end;
 
   }
 
@@ -475,163 +476,79 @@ transition: 1s;
     text-align: center;
   }
 
-
-
-
-
-  .about-me{
+  .about-me {
     width: 100%;
     height: 100vh;
   }
 
-  .about-me-cont{
+  .about-me-cont {
     width: 100%;
   }
 
-  .about-me-wrapper{
+  .about-me-wrapper {
     min-width: 100%;
   }
 
-  .my-img{
+  .my-img {
     width: 30vw;
   }
 
-.skills{
-  width: 100%;
-  height: 100vh;
-}
+  .skills {
+    width: 100%;
+    height: 100vh;
+  }
 
-.skills-cont{
-  width: 100%;
-}
-
-.skills-wrapper{
-  min-width: 100%;
-}
-
-.first-skills-block>img,
-.second-skill-block>img {
-  width: 15vw;
-}
-
-.projects{
-  width: 100%;
-  height: 100vh;
-}
-
-.projects-cont{
-  width: 100%;
-
-}
-
-.projects-wrapper{
-  min-width: 100%;
-  height: 70%;
-}
-
-.contact-me{
-  width: 100%;
-  height: 100vh;
-}
-
-.contactMe-cont{
-  width: 100%;
-}
-
-.contactMe-wrapper{
-  min-width: 100%;
-}
-
-.form-cont{
-  min-width: 100%;
-}
-
-.end-footer{
-  position: absolute;
-}
-
-
-
-  
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media all and (max-width:700px){
-  body{
+  .skills-cont {
     width: 100%;
   }
-.background{
-  width: 100vw;
-  border: solid red;
+
+  .skills-wrapper {
+    min-width: 100%;
+  }
+
+  .first-skills-block>img,
+  .second-skill-block>img {
+    width: 15vw;
+  }
+
+  .projects {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .projects-cont {
+    width: 100%;
+
+  }
+
+  .projects-wrapper {
+    min-width: 100%;
+    height: 70%;
+  }
+
+  .contact-me {
+    width: 100%;
+  }
+
+  .contactMe-cont {
+    width: 100%;
+  }
+
+  .contactMe-wrapper {
+    min-width: 100%;
+  }
+
+  .form-cont {
+    min-width: 100%;
+  }
+
+  .end-footer {
+    height: 70px;
+  }
+
 }
 
 
-.nav-header{
-  border: solid red;
-  width: 100vw;
-}
-
-.intro-cont{
-  border: solid red;
-  min-width: 100vw;
-}
-.about-me-wrapper{
-  min-width: 100vw;
-}
-
-.skills-wrapper{
-  min-width: 100vw;
-  border: solid;
-}
-
-.block-wrapper{
-  width: 100vw;
-  border: solid green;
-}
-
-.first-skills-block{
-  display: flex;
-  width: 100vw;
-  border: solid;
-}
 
 
 
-
-.carousel{
-  border: solid red;
-  width: 100vw;
-}
-
-
-} */
