@@ -4,6 +4,7 @@ import { AboutMe } from "./aboutMe.jsx";
 import { SkillsPage } from "./skills.jsx";
 import { Projects } from "./projects.jsx";
 import { ContactMe } from "./contactMe.jsx";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export const NavigationBar = () => {
   const home = useRef(null);
@@ -19,52 +20,73 @@ export const NavigationBar = () => {
     });
   };
 
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive-nav");
+  };
+
   return (
     <>
       <header className="nav-header">
-        <ul>
-          <li
-            onClick={() => {
-              scrollToSection(home);
-            }}
-            className="link"
-          >
-            Home
-          </li>
-          <li
-            onClick={() => {
-              scrollToSection(aboutMe);
-            }}
-            className="link"
-          >
-            About Me
-          </li>
-          <li
-            onClick={() => {
-              scrollToSection(skills);
-            }}
-            className="link"
-          >
-            Skills
-          </li>
-          <li
-            onClick={() => {
-              scrollToSection(projects);
-            }}
-            className="link"
-          >
-            Projects
-          </li>
-          <li
-            onClick={() => {
-              scrollToSection(contactMe);
-            }}
-            className="link"
-          >
-            Contact me
-          </li>
+        <ul ref={navRef}>
+          <div className="nav-cont">
+            <li
+              onClick={() => {
+                showNavbar();
+                scrollToSection(home);
+              }}
+              className="link"
+            >
+              Home
+            </li>
+            <li
+              onClick={() => {
+                showNavbar();
+                scrollToSection(aboutMe);
+              }}
+              className="link"
+            >
+              About Me
+            </li>
+            <li
+              onClick={() => {
+                showNavbar();
+                scrollToSection(skills);
+              }}
+              className="link"
+            >
+              Skills
+            </li>
+            <li
+              onClick={() => {
+                showNavbar();
+                scrollToSection(projects);
+              }}
+              className="link"
+            >
+              Projects
+            </li>
+            <li
+              onClick={() => {
+                showNavbar();
+                scrollToSection(contactMe);
+              }}
+              className="link"
+            >
+              Contact me
+            </li>
+          </div>
+          <button className="nav-close-btn" onClick={showNavbar}>
+            x
+          </button>
         </ul>
+        <button className="nav-btn" onClick={showNavbar}>
+          <AiOutlineMenu
+          />
+        </button>
       </header>
+
       <div ref={home}>
         <Home />
       </div>
