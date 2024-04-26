@@ -11,6 +11,11 @@ export const Projects = () => {
       link: "https://melodic-paletas-bceb06.netlify.app/",
     },
     {
+      image:require("../images/Screenshot 2024-04-26 154059.png"),
+      info:"Full-Stack mobile application for casual gym-goers built with a team of five developers.",
+      link: "https://northcoders.com/project-phase/neon-active"
+    },
+    {
       image: require("../images/calc.png"),
       info: "A page where users can do basic math. It was created using HTML, CSS, and JavaScript.",
       link: "https://iamsarojtmg.github.io/calculator/",
