@@ -10,7 +10,6 @@ export const AboutMe = () => {
         <div className="about-me-wrapper">
           <h1>About me</h1>
           <img
-            // width={200}
             className="my-img"
             src={profilePic}
             alt="image of the owner of the portfolio"
