@@ -12,11 +12,7 @@ export const Home = () => {
           <div className="first-intro">
             <h1 className="full-name">Saroj Tamang</h1>
             <p>
-              I am an ambitious, business-focused software developer and
-              experienced Service Desk Analyst. Equipped with a robust amount of
-              soft skills, eager to learn new languages on both the front and
-              back end and contribute to cutting-edge projects - I am looking
-              for a role as an entry-level software developer.
+            I'm a Full Stack Developer specializing in JavaScript, React, and Node.js for frontend development. On the backend, I work with Express, PostgreSQL, MongoDB, and Mongoose. I use Git and GitHub for seamless collaboration. My recent projects incorporate Test-Driven Development (TDD) with Jest, and I'm exploring TypeScript to enhance my skills.
             </p>
           </div>
 
