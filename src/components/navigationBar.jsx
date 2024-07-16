@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Home } from "./home.jsx";
+import { Home } from "./home.tsx";
 import { AboutMe } from "./aboutMe.jsx";
 import { SkillsPage } from "./skills.tsx";
 import { Projects } from "./projects.jsx";

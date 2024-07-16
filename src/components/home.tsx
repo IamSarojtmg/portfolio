@@ -1,8 +1,9 @@
 import React from "react";
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
+import github from '../images/github.png'
+import linkedin from '../images/linkedin.png'
+const bio:string = "I'm a Full Stack Developer specializing in JavaScript, React, and Node.js for frontend development. On the backend, I work with Express, PostgreSQL, MongoDB, and Mongoose. I use Git and GitHub for seamless collaboration. My recent projects incorporate Test-Driven Development (TDD) with Jest, and I'm exploring TypeScript to enhance my skills."
 
-export const Home = () => {
+export const Home: React.FC = () => {
   return (
     <section className="home">
       <div className="container">
@@ -11,8 +12,7 @@ export const Home = () => {
         <div className="intro-cont">
           <div className="first-intro">
             <h1 className="full-name">Saroj Tamang</h1>
-            <p>
-            I'm a Full Stack Developer specializing in JavaScript, React, and Node.js for frontend development. On the backend, I work with Express, PostgreSQL, MongoDB, and Mongoose. I use Git and GitHub for seamless collaboration. My recent projects incorporate Test-Driven Development (TDD) with Jest, and I'm exploring TypeScript to enhance my skills.
+            <p>{bio}
             </p>
           </div>
 
