@@ -7,12 +7,17 @@ export const Projects = () => {
   const projects = [
     {
       image: require("../images/ncBackground.png"),
-      info: "A social content rating and discussion platform created using React, Express, and PostgreSQL.",
+      info: "A social content rating and discussion platform created using React, Node PostgreSQL, Jest.",
       link: "https://melodic-paletas-bceb06.netlify.app/",
     },
     {
+      image:require("../images/Ticketmaster.png"),
+      info:"Static website built using - React, TypeScript, CSS",
+      link: "https://chic-bombolone-96a8bf.netlify.app/"
+    },
+    {
       image:require("../images/Screenshot 2024-04-26 154059.png"),
-      info:"Full-Stack mobile application for casual gym-goers built with a team of five developers.",
+      info:"Team project buit with React Native, MongoDB, Express, Bcrypt.js, Victory Native, WebGL, Express-Validator",
       link: "https://northcoders.com/project-phase/neon-active"
     },
     {

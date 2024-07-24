@@ -1,9 +1,13 @@
 import React from "react";
 import github from '../images/github.png'
 import linkedin from '../images/linkedin.png'
-const bio:string = "I'm a Full Stack Developer specializing in JavaScript, React, and Node.js for frontend development. On the backend, I work with Express, PostgreSQL, MongoDB, and Mongoose. I use Git and GitHub for seamless collaboration. My recent projects incorporate Test-Driven Development (TDD) with Jest, and I'm exploring TypeScript to enhance my skills."
+const bio = (
+  <>
+  "I'm a Full Stack Developer specializing in <strong><em>JavaScript, React and Node.js</em></strong>,  for frontend development. On the backend, I work with <strong><em>Express, PostgreSQL, MongoDB, and Mongoose</em></strong>. I use <strong><em>Git and GitHub</em></strong> for seamless collaboration. My recent projects incorporate <strong><em> Test-Driven Development (TDD) with Jest,</em></strong> and I'm exploring <strong><em>TypeScript</em></strong> to enhance my skills."
+  </>
+)
 
-export const Home: React.FC = () => {
+export const Home = () => {
   return (
     <section className="home">
       <div className="container">
