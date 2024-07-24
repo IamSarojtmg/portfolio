@@ -2,3 +2,4 @@
     const value: any;
     export = value;
  }
+

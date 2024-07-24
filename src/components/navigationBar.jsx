@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Home } from "./home.tsx";
 import { AboutMe } from "./aboutMe.jsx";
 import { SkillsPage } from "./skills.tsx";
-import { Projects } from "./projects.jsx";
+import { Projects } from "./projects.tsx";
 import { ContactMe } from "./contactMe.jsx";
 import { AiOutlineMenu } from "react-icons/ai";
 
