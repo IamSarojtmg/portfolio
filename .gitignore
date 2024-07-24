@@ -1,4 +1,6 @@
 node_modules
+contactMe.jsx
+contactCode.jsx
 
 # Local Netlify folder
 .netlify
