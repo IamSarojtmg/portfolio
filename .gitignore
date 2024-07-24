@@ -1,6 +1,6 @@
 node_modules
-contactMe.jsx
-contactCode.jsx
+src\components\contactMe.jsx
+D:\saroj\Documents\portfolio -tsc\src\components\contactCode.jsx
 
 # Local Netlify folder
 .netlify
