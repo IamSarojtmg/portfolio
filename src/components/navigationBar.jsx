@@ -8,7 +8,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 export const NavigationBar = () => {
   const home = useRef(null);
-  const aboutMe = useRef(null);
+  // const aboutMe = useRef(null);
   const skills = useRef(null);
   const projects = useRef(null);
   const contactMe = useRef(null);
@@ -40,7 +40,7 @@ export const NavigationBar = () => {
             >
               Home
             </li>
-            <li
+            {/* <li
               onClick={() => {
                 showNavbar();
                 scrollToSection(aboutMe);
@@ -48,7 +48,7 @@ export const NavigationBar = () => {
               className="link"
             >
               About Me
-            </li>
+            </li> */}
             <li
               onClick={() => {
                 showNavbar();
@@ -91,9 +91,9 @@ export const NavigationBar = () => {
         <Home />
       </div>
 
-      <div ref={aboutMe}>
+      {/* <div ref={aboutMe}>
         <AboutMe />
-      </div>
+      </div> */}
 
       <div ref={skills}>
         <SkillsPage />

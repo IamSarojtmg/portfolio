@@ -7,41 +7,65 @@ export const Projects = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   interface projectsDetails {
     image: string;
-    info: string;
+    info: JSX.Element;
     link: string;
   }
+
+  const ncBio = (
+    <>
+  A social content rating and discussion platform created using <strong><em>React,Node PostgreSQL, Jest</em></strong>
+    </>
+  )
+
+  const ticketMasterBio = (
+    <>
+    Static website built using - <strong><em>React, Node, TypeScript, CSS</em></strong>
+    </>
+  )
+
+  const bitBuildersBio = (
+    <>
+    Team project buit with <strong><em>React Native, MongoDB, Express, Bcrypt.js, Victory Native, WebGL, Express-Validator</em></strong>
+    </>
+  )
+
+  const tikTakBio = (
+    <>
+    A game of TikTakToe. Created using <strong><em>HTML, CSS, and JavaScript</em></strong>
+    </>
+  )
 
   const projects: projectsDetails[] = [
     {
       image: ncBackground, //import instead of using require
-      info: "A social content rating and discussion platform created using React, Node PostgreSQL, Jest.",
+      info: ncBio,
       link: "https://melodic-paletas-bceb06.netlify.app/",
     },
     {
       image: require("../images/Ticketmaster.png"),
-      info: "Static website built using - React, Node, TypeScript, CSS",
+      info: ticketMasterBio,
       link: "https://chic-bombolone-96a8bf.netlify.app/",
     },
     {
       image: require("../images/Screenshot 2024-04-26 154059.png"),
-      info: "Team project buit with React Native, MongoDB, Express, Bcrypt.js, Victory Native, WebGL, Express-Validator",
+      info: bitBuildersBio,
       link: "https://northcoders.com/project-phase/neon-active",
     },
     {
-      image: require("../images/calc.png"),
-      info: "A page where users can do basic math. It was created using HTML, CSS, and JavaScript.",
-      link: "https://iamsarojtmg.github.io/calculator/",
-    },
-    {
-      image: require("../images/etch.png"),
-      info: "It's a game that lets users draw. Created using HTML, CSS, and JavaScript.",
-      link: "https://iamsarojtmg.github.io/Etch-a-Sketch/",
-    },
-    {
       image: require("../images/tiktak.png"),
-      info: "A game of TikTakToe. Created using HTML, CSS, and JavaScript.",
+      info: tikTakBio,
       link: "https://iamsarojtmg.github.io/TikTakToe-JS/",
     },
+    // {
+    //   image: require("../images/calc.png"),
+    //   info: "A page where users can do basic math. It was created using HTML, CSS, and JavaScript.",
+    //   link: "https://iamsarojtmg.github.io/calculator/",
+    // },
+    // {
+    //   image: require("../images/etch.png"),
+    //   info: "It's a game that lets users draw. Created using HTML, CSS, and JavaScript.",
+    //   link: "https://iamsarojtmg.github.io/Etch-a-Sketch/",
+    // },
   ];
 
   const updateIndex = (newIndex: number) => {

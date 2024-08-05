@@ -52,7 +52,7 @@ export const Home = () => {
           <p>Email Address: saroj_tamang@aol.com</p>
           <a
             className="view-cv"
-            href="https://docs.google.com/document/d/1SmNN_ysF2mqTrQP67leWvXxMUijojsSDR_rG4Fyjw-U/edit?usp=sharing"
+            href="https://docs.google.com/document/d/e/2PACX-1vTugeTsQ6xwSYN2FdBrtuwIesT5l7QNXu7rqPFDGPDv5oZBSoPzFm4wHrORuVwJc7ssrYk1_l7yM6uU/pub"
             >
             View CV
           </a>
